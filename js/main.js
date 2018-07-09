@@ -4,31 +4,36 @@ function main() {
     'use strict';
     var toggleon = true;
 
-    if (toggleon == true) {
-      $('.navbar-toggle').on('click', function(event) {
-        event.preventDefault();
-        $('.navbar-default').toggleClass('on');
+      $('.navbar-toggle').on('click', function() {
+        if (toggleon == true) {
+          $('#bs-navbar-collapse-3').stop(true);
+          $('.navbar-default').stop(true).toggleClass('on');
+        } else {
+          $('#bs-navbar-collapse-3').stop(true);
+          $('.navbar-default').stop(true);
+        }
       });
-    }
+
       $(window).bind('scroll', function() {
           var navHeight = 100;
 
           if ($(window).scrollTop() == 0) {
             toggleon = true;
-            $('.phone-moda').html('toggle '+ toggleon);
+            $('.phone-moda').html('toggleon = true');
           } 
           if ($(window).scrollTop() != 0) {
             toggleon = false;
-            $('.phone-moda').html('toggle '+ toggleon);
+            $('.phone-moda').html('toggleon = false');
           }
 
           if ($(window).scrollTop() > navHeight) {
               $('.navbar-default').addClass('on');
-              toggleon = false;
               $('#scroll').css( "background", "#071232" );
               $('#scroll').css( "animation-play-state", "paused" );
           } else {
-              $('.navbar-default').removeClass('on');
+              if ($('#bs-navbar-collapse-3').hasClass('in') != true) {
+                $('.navbar-default').removeClass('on');
+              }
               $('#scroll').css( "background", "none" );
               $('#scroll').css( "animation-play-state", "running" );
           }
