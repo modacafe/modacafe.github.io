@@ -7,18 +7,20 @@ function main() {
 
   (function () {
     'use strict';
+    
+    var toggleon = false;
+
+    if ($(window).scrollTop() == 0) {
+      $('.phone-moda').html('toggle '+ toggleon);
+      toggleon = true;
+    } 
+    if ($(window).scrollTop() > 0) {
+      $('.phone-moda').html('toggle '+ toggleon);
+      toggleon = false;
+    }
+
       $(window).bind('scroll', function() {
           var navHeight = 100;
-          var toggleon = false;
-
-          if ($(window).scrollTop() == 0) {
-            $('.phone-moda').html('toggle '+ toggleon);
-            toggleon = true;
-          } 
-          if ($(window).scrollTop() > 0) {
-            $('.phone-moda').html('toggle '+ toggleon);
-            toggleon = false;
-          }
 
           if ($(window).scrollTop() > navHeight) {
               $('.navbar-default').addClass('on');
