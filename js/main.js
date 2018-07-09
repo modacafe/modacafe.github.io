@@ -1,29 +1,30 @@
-
-
-
-  
 function main() {
-
 
   (function () {
     'use strict';
-    
-    var toggleon = false;
+    var toggleon = true;
 
-    if ($(window).scrollTop() == 0) {
-      $('.phone-moda').html('toggle '+ toggleon);
-      toggleon = true;
-    } 
-    if ($(window).scrollTop() > 0) {
-      $('.phone-moda').html('toggle '+ toggleon);
-      toggleon = false;
+    if (toggleon == true) {
+      $('.navbar-toggle').on('click', function(event) {
+        event.preventDefault();
+        $('.navbar-default').toggleClass('on');
+      });
     }
-
       $(window).bind('scroll', function() {
           var navHeight = 100;
 
+          if ($(window).scrollTop() == 0) {
+            toggleon = true;
+            $('.phone-moda').html('toggle '+ toggleon);
+          } 
+          if ($(window).scrollTop() != 0) {
+            toggleon = false;
+            $('.phone-moda').html('toggle '+ toggleon);
+          }
+
           if ($(window).scrollTop() > navHeight) {
               $('.navbar-default').addClass('on');
+              toggleon = false;
               $('#scroll').css( "background", "#071232" );
               $('#scroll').css( "animation-play-state", "paused" );
           } else {
@@ -31,13 +32,6 @@ function main() {
               $('#scroll').css( "background", "none" );
               $('#scroll').css( "animation-play-state", "running" );
           }
-          if (toggleon == true) {
-            $('.navbar-toggle').on('click', function() {
-              $('.navbar-default').toggleClass('on');
-              console.log(' 1 ...');
-            });
-          }
-
           if ( ( $(document).height() - $(window).scrollTop() ) < 900) {
             $('#scroll').addClass('rotate');
           } else {
