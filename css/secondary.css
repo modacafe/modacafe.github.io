@@ -1,0 +1,505 @@
+
+/*
+*/
+.sec3 li {
+    height: 403px;
+}
+/*
+*/
+#icons {
+    z-index: -1;
+    position: relative;
+	background-size: cover;
+}
+#icons:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 100px;
+    background: white;
+    transform-origin: left;
+    transform: skewY(6.4deg);
+}
+#icons:after {
+    content: "";
+    position: absolute;
+    bottom: -27px;
+    width: 100%;
+    height: 110px;
+    background: white;
+    transform-origin: unset;
+    transform: skewY(-5.1deg);
+    left: 45%;
+}
+#icons.business {
+	background: url("../img/moda/bgs/1business.jpg") no-repeat center center transparent;
+    background-size: cover;
+}
+#icons.business .container {
+	background-color:rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	padding-bottom: 177px;
+}
+#icons.incentive {
+    background: url("../img/moda/bgs/2intencive.jpg") no-repeat center center transparent;
+    background-size: cover;
+}
+#icons.incentive .container {
+	background-color:rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	padding-bottom: 177px;
+}
+
+#icons.conferences {
+	background: url("../img/moda/bgs/3conference.jpg") no-repeat center center transparent;
+    background-size: cover;
+}
+#icons.conferences .container {
+	background-color:rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	padding-bottom: 177px;
+}
+
+.icon-list {
+    font-size: 24px;
+    color: black;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.icon-list li {
+	list-style-type: none;
+	list-style: none;
+    text-align: center;	
+    padding: 17px;
+}
+
+.icon-list li .pictogram {
+	text-align: center;
+	margin: 0 auto;
+}
+#icons.business .pictogram {
+	background: url("../img/moda/icons/icons-business.png") no-repeat transparent;
+    height: 375px;
+    width: 165px;
+}
+
+.ordinal1 {
+	background-position: -200px 0px!important;
+}
+.ordinal2 {
+	background-position: -684px 0px!important;
+}
+.ordinal3 {
+	background-position: -1167px 0px!important;
+}
+
+.ordinal4 {
+	background-position: -200px -420px!important;
+}
+.ordinal5 {
+	background-position: -684px -420px!important;
+}
+.ordinal6 {
+	background-position: -1167px -420px!important;
+}
+
+.ordinal7 {
+	background-position: -205px -840px!important;
+}
+.ordinal8 {
+	background-position: -690px -840px!important;
+}
+.ordinal9 {
+	background-position: -1173px -840px!important;
+}
+
+.ordinal10 {
+	background-position: -206px -1260px!important;
+}
+.ordinal11 {
+	background-position: -690px -1260px!important;
+}
+.ordinal12 {
+	background-position: -1173px -1260px!important;
+}
+
+.ordinal13 {
+	background-position: -206px -1680px!important;
+}
+.ordinal14 {
+	background-position: -690px -1680px!important;
+}
+.ordinal15 {
+	background-position: -1173px -1680px!important;
+}
+
+
+#icons.incentive .pictogram {
+    background: url("../img/moda/icons/icons-intencive.png") no-repeat transparent;
+    height: 375px;
+    width: 165px;
+}
+#icons.incentive .ordinal1 {
+	background-position: -223px -35px !important;
+}
+#icons.incentive .ordinal2 {
+	background-position: -707px -35px !important;
+}
+#icons.incentive .ordinal3 {
+	background-position: -1191px -35px !important;
+}
+
+#icons.incentive .ordinal4 {
+	background-position: -225px -467px!important;
+}
+#icons.incentive .ordinal5 {
+	background-position: -229px -467px !important;
+}
+#icons.incentive .ordinal6 {
+	background-position: -712px -467px !important;
+}
+
+#icons.incentive .ordinal7 {
+	background-position: -1196px -467px!important;
+}
+#icons.incentive .ordinal8 {
+	background-position: -712px -875px!important;
+}
+#icons.incentive .ordinal9 {
+	background-position: -1173px -840px!important;
+}
+
+#icons.incentive .ordinal10 {
+	background-position: -206px -1260px!important;
+}
+#icons.incentive .ordinal11 {
+	background-position: -690px -1260px!important;
+}
+#icons.incentive .ordinal12 {
+	background-position: -1173px -1260px!important;
+}
+
+#icons.incentive .ordinal13 {
+	background-position: -206px -1680px!important;
+}
+#icons.incentive .ordinal14 {
+	background-position: -690px -1680px!important;
+}
+#icons.incentive .ordinal15 {
+	background-position: -1173px -1680px!important;
+}
+
+
+#icons.conferences .pictogram {
+	background: url("../img/moda/icons/icons-conference.png") no-repeat transparent;
+    height: 375px;
+    width: 165px;
+}
+#icons.conferences .ordinal1 {
+	background-position: -229px -65px !important;
+}
+#icons.conferences .ordinal2 {
+	background-position: -713px -65px !important;
+}
+#icons.conferences .ordinal3 {
+	background-position: -1197px -65px !important;
+}
+
+#icons.conferences .ordinal4 {
+	background-position: -236px -535px !important;
+}
+#icons.conferences .ordinal5 {
+	background-position: -719px -535px !important;
+}
+#icons.conferences .ordinal6 {
+	background-position: -1201px -535px !important;
+}
+
+#icons2.conferences ul li {
+    font-size: 24px;
+    list-style-type: none;
+	padding: 35px 0 0 77px;
+    background-image: url("../img/moda/icons/icons2conf.png");
+    background-repeat: no-repeat;
+}
+#icons2.conferences ul li:first-of-type {
+	margin-top: 40px;
+}
+#icons2.conferences ul li:last-of-type {
+	margin-bottom: 40px;
+}
+.icon2conf1 {
+	background-position: -200px 3px;
+}
+.icon2conf2 {
+	background-position: -200px -101px;
+}
+.icon2conf3 {
+	background-position: -200px -191px;
+}
+.icon2conf4 {
+	background-position: -200px -284px;
+}
+.icon2conf5 {
+	background-position: -200px -423px;
+}
+.icon2conf6 {
+	background-position: -200px -511px;
+}
+.icon2conf7 {
+	background-position: -200px -608px;
+}
+.icon2conf8 {
+	background-position: -200px -709px;
+}
+.icon2conf9 {
+	background-position: -200px -802px;
+}
+.icon2conf10 {
+	background-position: -1153px 0;
+}
+.icon2conf11 {
+	background-position: -1153px -104px;
+}
+.icon2conf12 {
+	background-position: -1148px -210px;
+}
+.icon2conf13 {
+	background-position: -1149px -338px;
+}
+.icon2conf14 {
+	background-position: -1153px -484px;
+}
+.icon2conf15 {
+	background-position: -1153px -582px;
+}
+.icon2conf16 {
+	background-position: -1153px -681px;
+}
+.icon2conf17 {
+	background-position: -1153px -788px;
+}
+.icon2conf18 {
+	background-position: -1153px -910px
+}
+
+/* team-building */
+#icons.team-building {
+	background: url("../img/moda/bgs/4team-building.jpg") no-repeat center center transparent;
+    background-size: cover;
+}
+#icons.team-building .container {
+	background-color:rgba(255, 255, 255, 0.85);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	padding-bottom: 177px;
+}
+
+#overview.team-building .pictogram, #icons.team-building .pictogram {
+	background: url("../img/moda/icons/icons-team-building-all.png") no-repeat transparent;
+}
+
+#overview.team-building .pictogram {
+    height: 110px;
+    width: 110px;
+}
+#icons.team-building .pictogram {
+    height: 375px;
+    width: 165px;
+}
+#overview.team-building li {
+    list-style: none;
+}
+#overview.team-building span {
+    font-size: 24px;
+    color: #3d454a;
+}
+.icon2team1 .pictogram {
+	background-position: -452px -159px !important;
+}
+.icon2team2 .pictogram {
+	background-position: -195px -167px !important;
+}
+.icon2team3 .pictogram {
+	background-position: -689px -167px!important;
+}
+.icon2team4 .pictogram {
+	background-position: -945px -177px !important;
+}
+.icon2team5 .pictogram {
+	background-position: -1200px -167px !important;
+}
+
+#icons.team-building .ordinal1 {
+	background-position: -191px -300px !important;
+}
+#icons.team-building .ordinal2 {
+	background-position: -675px -300px !important;
+}
+#icons.team-building .ordinal3 {
+	background-position: -1157px -300px !important;
+}
+
+#icons.team-building .ordinal4 {
+	background-position: -187px -643px !important;
+}
+#icons.team-building .ordinal5 {
+	background-position: -671px -643px !important;
+}
+#icons.team-building .ordinal6 {
+	background-position: -1154px -643px !important;
+}
+/* EVENT */
+#icons.event-creating {
+	background: url("../img/moda/bgs/5-EVENT-events.jpg") no-repeat center center transparent;
+    background-size: cover;
+}
+#icons.event-creating .container {
+	background-color:rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	padding-bottom: 177px;
+}
+
+#icons.event-creating .pictogram {
+	background: url("../img/moda/icons/icons-events.png") no-repeat transparent;
+}
+#icons.event-creating .pictogram {
+    height: 375px;
+    width: 165px;
+}
+#icons.event-creating .ordinal1 {
+	background-position: -153px -30px !important;
+}
+#icons.event-creating .ordinal2 {
+	background-position: -637px -30px !important;
+}
+#icons.event-creating .ordinal3 {
+	background-position: -1121px -30px !important;
+}
+
+#icons.event-creating .ordinal4 {
+	background-position: -395px -449px !important;
+}
+#icons.event-creating .ordinal5 {
+	background-position: -880px -449px !important;
+}
+/* Immersive */
+#icons.immersive {
+	background: url("../img/moda/bgs/7-immersive.jpg") no-repeat center center transparent;
+    background-size: cover;
+}
+#icons.immersive .container {
+	background-color:rgba(255, 255, 255, 0.7);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	padding-bottom: 177px;
+}
+
+#icons.immersive .pictogram {
+	background: url("../img/moda/icons/icons-immersive.png") no-repeat transparent;
+}
+#icons.immersive .pictogram {
+    height: 375px;
+    width: 165px;
+}
+#icons.immersive .ordinal1 {
+	background-position: -130px 0px !important;
+}
+#icons.immersive .ordinal2 {
+	background-position: -615px 0px !important;
+}
+#icons.immersive .ordinal3 {
+	background-position: -1097px 0px !important;
+}
+
+#icons.immersive .ordinal4 {
+	background-position: -137px -407px !important;
+}
+#icons.immersive .ordinal5 {
+	background-position: -620px -407px !important;
+}
+#icons.immersive .ordinal6 {
+	background-position: -1103px -407px !important;
+}
+/* vip-aviation */
+#icons.vip-aviation {
+	background: url("../img/moda/bgs/8-vipavia.jpg") no-repeat center center transparent;
+    background-size: cover;
+}
+#icons.vip-aviation .container {
+	background-color:rgba(255, 255, 255, 0.85);
+    height: 100%;
+    width: 100%;
+    top: 0;
+	left: 0;
+	padding-bottom: 177px;
+}
+
+#overview.vip-aviation .pictogram, #icons.vip-aviation .pictogram {
+	background: url("../img/moda/icons/icons-vipavia.png") no-repeat transparent;
+}
+
+#overview.vip-aviation .pictogram {
+    height: 110px;
+    width: 110px;
+}
+#icons.vip-aviation .pictogram {
+    height: 375px;
+    width: 165px;
+}
+#overview.vip-aviation li {
+    list-style: none;
+}
+#overview.vip-aviation span {
+    font-size: 24px;
+    color: #3d454a;
+}
+.icon2vip1 .pictogram {
+	background-position: -275px -108px !important;
+}
+.icon2vip2 .pictogram {
+	background-position: -639px -108px !important;
+}
+.icon2vip3 .pictogram {
+	background-position: -1005px -108px !important;
+}
+.icon2vip4 .pictogram {
+	background-position: -1373px -108px !important;
+}
+
+#icons.vip-aviation .ordinal1 {
+	background-position: -313px -300px !important;
+}
+#icons.vip-aviation .ordinal2 {
+	background-position: -797px -300px !important;
+}
+#icons.vip-aviation .ordinal3 {
+	background-position: -1279px -300px !important;
+}
+
+#icons.vip-aviation .ordinal4 {
+	background-position: -319px -739px !important;
+}
+#icons.vip-aviation .ordinal5 {
+	background-position: -803px -739px !important;
+}
+#icons.vip-aviation .ordinal6 {
+	background-position: -1285px -739px !important;
+}

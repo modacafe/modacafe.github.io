@@ -1,0 +1,933 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
+.color-main {
+	color: #ff7f27;
+}  
+.color-business {
+	color: #ff4a49;
+} 
+
+body, html{
+	font-family: 'Open Sans', sans-serif;
+	text-rendering: optimizeLegibility !important;
+	-webkit-font-smoothing: antialiased !important;
+	color: #5a5a5a;
+	
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+h1 {
+	text-transform: uppercase;
+}
+.heading {
+	height: 37vh;
+	position: relative;
+}
+.heading h1 {
+	position: absolute;
+	bottom: 0;
+    font-size: 47px;
+	color: white;
+	font-weight: bold;
+	clear: both;
+}
+.heading span {
+	position: absolute;
+	bottom: -77px;
+	line-height: 21px;
+    font-size: 17px;
+	font-weight: lighter;
+	color: rgba(255, 255, 255, 0.77);
+	text-transform: none;
+}
+.circle-menu {
+	height: 53vh;
+	position: relative;
+}
+#scroll {
+	height: 15vh;
+}
+.rb-ff8916 {
+	background-color: #ff8916;
+}
+.rb-1f9dfb {
+	background-color: #1f9dfb;
+}
+.rb-ff4b4a {
+	background-color: #ff4b4a;
+}
+.rb-8e8f91 {
+	background-color: #8e8f91;
+}
+.rb-20dc27 {
+	background-color: #20dc27;
+}
+.rb-692e95 {
+	background-color: #692e95;
+}
+.rb-cfb60f {
+	background-color: #cfb60f;
+}
+
+h1 strong {
+	font-weight: 800;
+}
+
+h2 {
+	text-transform: uppercase;
+	line-height: 20px;
+	margin: 0;
+}
+h3{
+	font-size: 18px;
+	font-weight: 800;
+}
+.sec2 h3 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #ff7f27;
+}
+h4 {
+	text-transform: uppercase;
+}
+.text {
+    font-size: 36px;
+    padding: 30px 40px 40px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.text h4 {
+    font-size: 36px;
+	text-transform: none;
+	font-weight: bold
+}
+.text p {
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+h5{
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 20px;
+}
+p{
+	font-family: 'Open Sans', sans-serif;
+}
+p.intro{
+	font-size: 16px;
+	margin: 12px 0 0;
+	line-height: 24px;
+	font-family: 'Open Sans', sans-serif;
+}
+a{ color: #f26525;}
+a:hover,
+a:focus{
+	text-decoration: none;
+	color: #f26525;
+}
+#icons2.conferences {
+	background: url("../img/moda/bgs/3conf.png") no-repeat 46% center white;
+}
+#icons2.conferences ul {
+	color: #4c4c4c;
+	font-weight: 600;
+}
+.ul-title {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 31px;
+}
+
+.section-title hr{
+	border-color: #f26525;
+	border-width: 4px;
+	width: 60px;
+	float: left;
+	clear: both;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+ul, ol{
+	padding: 0;
+	webkit-padding: 0;
+	moz-padding: 0;
+}
+/* Navigation */
+#tf-menu {
+	padding: 20px 5%;
+	transition: all 0.8s;
+}
+#tf-menu.navbar-default {
+	background-color: rgba(248, 248, 248, 0);
+	border-color: rgba(231, 231, 231, 0);
+}
+#tf-menu a.navbar-brand {
+	padding: 0 15px; /* bootstrap fix */
+	border-right: solid 1px #525970;
+text-transform: uppercase;
+font-size: 22px;
+color: #fff;
+font-weight: 900;
+width: 117px;
+}
+.logo {
+	float: left;	
+}
+.logo-text {
+
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+    margin: 0 20px;
+    width: 95px;
+    text-transform: uppercase;
+    color: #f26525;
+	font-family: "Roboto Condensed",sans-serif;
+	line-height: 17px;
+
+}
+.phone-moda {
+    float: left;
+    font-weight: bold;
+    font-size: 17px;
+    padding: 12px;
+    color: white;
+    text-align: center;
+}
+#tf-menu.navbar-default .navbar-nav > li > a {
+	text-transform: uppercase;
+	color: #FFF;
+	font-size: 10px;
+	letter-spacing: 1px;
+	text-decoration: underline;
+}
+.on {
+	background-color: #071232 !important;
+	/* padding: 0 !important;	 */
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	color: #f26525 !important;
+	background-color: transparent;
+	font-weight: 700;
+}
+
+.navbar-toggle {
+	border-radius: 0;
+	border: 0px solid;
+	}
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus {
+	color: #FFF;
+	background-color: transparent;
+	}
+.navbar-default .navbar-toggle:hover>.icon-bar {
+	background-color: #FFF;
+	}
+
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+		border: 0px solid;
+	}
+
+	.navbar-collapse {
+		border-top: 0px solid transparent;
+		-webkit-box-shadow: inset 0 0 0 rgba(255, 255, 255, 0);
+		box-shadow: inset 0 0 0 rgba(255, 255, 255, 0);
+	}
+
+.callback::before {
+    background: url("../img/moda/before/icon-call.png") center 0 no-repeat;
+    content: "";
+    float: left;
+    margin-top: -5px;
+    margin-right: 12px;
+    width: 31px;
+    height: 31px;
+}
+.about::before {
+    background: url("../img/moda/before/icon-about.png") center 0 no-repeat;
+    content: "";
+    float: left;
+    margin-top: -5px;
+    margin-right: 12px;
+    width: 31px;
+    height: 31px;
+}
+.ind-travel::before {
+    background: url("../img/moda/before/icon-ind.png") center 0 no-repeat;
+    content: "";
+    float: left;
+    margin-top: -5px;
+    margin-right: 12px;
+    width: 31px;
+    height: 31px;
+}
+.portfolio::before {
+    background: url("../img/moda/before/icon-port.png") center 0 no-repeat;
+    content: "";
+    float: left;
+    margin-top: -5px;
+    margin-right: 12px;
+    width: 31px;
+    height: 31px;
+}
+.menu-search::before {
+    background: url("../img/moda/before/icon-search.png") center 0 no-repeat;
+    content: "";
+    float: left;
+    margin-top: -5px;
+    margin-right: 12px;
+    width: 31px;
+    height: 31px;
+}
+  
+/* Home Style */
+#home {
+	background: url(../img/moda/hero/bg-biz-new.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #cfcfcf;
+	min-height: 100vh;
+}
+
+#home .inner {
+	height: 100%;
+	background-attachment: fixed;
+
+    -webkit-animation: 1.5s ease 0s normal forwards 1 fadein;
+    animation: 1.5s ease 0s normal forwards 1 fadein;
+}
+
+#home p.lead {
+	color: #e3e3e3;
+}
+
+.content{
+	position: relative;
+}
+
+.color{
+	color: #f26525;
+}
+.panel {
+	border: 0px solid;
+	box-shadow: none;
+}
+.sec1 {
+	position: absolute;
+	bottom: 100px;
+}
+.sec1-1 {
+	margin: 10px 0;
+	position: absolute;
+	bottom: 0;
+}
+.sec2 {
+    text-align: center;
+	color: #3d454a;
+	padding-top: 140px;
+    margin: 0 0 70px;
+    clear: both;
+}
+.sec2.corp .hdr {
+    font-weight: bold;
+    font-size: 40px;
+    color: #ff7f27;
+}
+.sec2.corp img {
+	margin: 5px auto;
+}
+
+.sec2.corp ul::before, .sec2.corp ul::after {
+    content: " ";
+    display: table;
+}
+.sec2.corp ul li {
+    list-style: none;
+    font-size: 18px;
+	font-weight: 300;
+	height: 297px;
+	margin-bottom: 50px;
+}
+.sec2.corp ul li span.txt {
+    margin: 40px 0;
+    display: block;
+    text-transform: uppercase;
+}
+#team{ margin: 0 auto}
+#team .item{
+    padding: 0;
+    margin: 15px;
+    color: #FFF;
+    text-align: center;
+}
+
+img.img-circle.team-img {
+	width: 120px;
+	height: 120px;
+	border: 4px solid transparent;
+	transition: all 0.5s;
+}
+#tf-team .item .thumbnail:hover>img.img-circle.team-img{
+	border: 4px solid #f26525;
+}
+#tf-team .thumbnail {
+	background: transparent;
+	border: 0;
+}
+
+#tf-team .thumbnail .caption {
+	padding: 9px;
+	color: #F2F2F2;
+}
+
+
+.owl-theme .owl-controls .owl-page.active span, 
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+	filter: Alpha(Opacity=100);
+	opacity: 1;
+	background: #f26525;
+}
+.owl-theme .owl-controls .owl-page.active span{
+	background: #f26525;
+}
+
+/* Services Section */
+#tf-services {
+	padding: 80px 0;
+}
+
+.space {
+	margin-top: 40px;
+}
+.service-card {
+    margin-bottom: -10px;
+	padding: 0 !important;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.service-card-img {
+    height: 400px;
+    max-width: 636px;
+    margin: -10px auto;
+}
+
+	/* matrix of services */
+	.container-fluid {
+		max-width: 1272px;
+		padding: 0;
+	}
+	.label-text {
+		height: 160px;
+		color: white;
+		padding-top: 5px;
+		position: relative;
+	}
+	.label-text > img {
+		float: left; 
+	}  
+	.label-text > small {
+		font-size: 15px;
+		text-transform: uppercase;
+	}
+	.label-text > h4 {
+		font-size: 35px;
+		margin: 0;
+		line-height: 27px;
+	}
+	.details {
+		margin-top: 5px;
+		position: absolute;
+		bottom: 60px;
+	}
+	.left-pos{
+		left: 105px;
+	}
+	.right-pos{
+		right: 105px;
+	}
+	.details a {
+		color: #3d454a;
+		background-color: #fff;
+		font-weight: bold;
+		font-size: 10px;
+		padding: 3px 17px;
+		border-radius: 20px;
+	}
+	.details a:hover {
+		text-decoration:  underline;
+	}
+.meeting1 {
+	background: url("../img/moda/bg-matrix/bg1.jpg") center 10px no-repeat transparent;
+} 
+.meeting1 .label-text {
+	background: url("../img/moda/headers/header1.png") bottom center no-repeat transparent;
+	text-align: left; padding-left: 5px;
+}
+.incentiv2 {
+	background: url("../img/moda/bg-matrix/bg2.jpg") center 10px no-repeat transparent;
+}
+.incentiv2 .label-text {
+	background: url("../img/moda/headers/header2.png") bottom center no-repeat transparent;
+	text-align: right;  padding-right: 5px;
+} 
+.incentiv2 img {
+	float: right;
+}
+.conferenc3 {
+	background: url("../img/moda/bg-matrix/bg3.jpg") center 10px no-repeat transparent;
+}
+.conferenc3 .label-text {
+	background: url("../img/moda/headers/header3.png") bottom center no-repeat transparent;
+	text-align: left; padding-left: 5px;
+} 
+.event4 {
+	background: url("../img/moda/bg-matrix/bg4.jpg") center 10px no-repeat transparent;
+}
+.event4 .label-text {
+	background: url("../img/moda/headers/header4.png") bottom center no-repeat transparent;
+	text-align: right;  padding-right: 5px;
+} 
+.event4 img {
+	float: right;
+}
+.immersive5 {
+	background: url("../img/moda/bg-matrix/bg5.jpg") center 10px no-repeat transparent;
+}
+.immersive5 .label-text {
+	background: url("../img/moda/headers/header5.png") bottom center no-repeat transparent;
+	text-align: left; padding-left: 5px;
+}
+.team6 {
+	background: url("../img/moda/bg-matrix/bg6.jpg") center 10px no-repeat transparent;
+}
+.team6 .label-text {
+	background: url("../img/moda/headers/header6.png") bottom center no-repeat transparent;
+	text-align: right;  padding-right: 5px;
+}
+.team6 img {
+	float: right;
+}
+.afisha7 {
+	background: url("../img/moda/bg-matrix/bg7.jpg") center 10px no-repeat transparent;
+}
+.afisha7 .label-text {
+	background: url("../img/moda/headers/header7.png") bottom center no-repeat transparent;
+	text-align: left; padding-left: 5px;
+}
+.vip-avia8 {
+	background: url("../img/moda/bg-matrix/bg8.jpg") center 10px no-repeat transparent;
+}
+.vip-avia8 .label-text {
+	background: url("../img/moda/headers/header8.png") bottom center no-repeat transparent;
+	text-align: right;  padding-right: 5px;
+} 
+.vip-avia8 img {
+	float: right;
+}
+.special9 {
+	background: url("../img/moda/bg-matrix/bg9.jpg") center 10px no-repeat transparent;
+}
+.special9 .label-text {
+	background: url("../img/moda/headers/header9.png") bottom center no-repeat transparent;
+	text-align: left; padding-left: 5px;
+} 
+.sertificat10 {
+	background: url("../img/moda/bg-matrix/bg10.jpg") center 10px no-repeat transparent;
+}
+.sertificat10 .label-text {
+	background: url("../img/moda/headers/header10.png") bottom center no-repeat transparent;
+	text-align: right;  padding-right: 5px;
+}
+.sertificat10 img {
+	float: right;
+}
+/* Contact Section */
+#tf-contact{
+	padding: 80px 0;
+}
+
+label {
+	float: left;
+	font-size: 12px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+}
+#tf-contact .form-control {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 2px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	-webkit-transition: none;
+	-o-transition: none;
+	transition: none;
+}
+
+#tf-contact .form-control:focus {
+	border-color: inherit;
+	outline: 0;
+	-webkit-box-shadow: transparent;
+	box-shadow: transparent;
+}
+
+button.btn.tf-btn.btn-default {
+	float: right;
+	background: #f26525;
+	border: 0;
+	border-radius: 0;
+	padding: 10px 40px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.btn:active, .btn.active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+.btn:focus, 
+.btn:active:focus, 
+.btn.active:focus, 
+.btn.focus, 
+.btn:active.focus, 
+.btn.active.focus {
+	outline: none;
+	outline-offset: none;
+}
+/* Footer */
+nav#footer{
+	background: #222222;
+	color: #ffffff;
+	padding: 20px 0 15px 0;
+}
+nav#footer .fnav{ vertical-align: middle;}
+ul.footer-social li{
+	display: inline-block;
+	margin-right: 10px;
+}
+nav#footer p{
+	font-size: 12px;
+	margin-top: 10px;
+}
+#footer i.fa {
+	height: 30px;
+	width: 30px;
+	border: 2px solid #8c8c8c;
+	font-size: 20px;
+	padding: 4px 5px;
+	border-radius: 50%;
+	color: #8c8c8c;
+	transition: all 0.5s;
+}
+#footer i.fa:hover{
+	background: #f26525;
+	border-color: #f26525;
+	color: #ffffff;
+}
+
+#clients .item {
+    padding: 0;
+    margin: 0;
+    color: #FFF;
+    text-align: center;
+}
+/* Circles from moda cafe */
+.webex-circles .cont-1{text-align:center;}.webex-circles .cont-2{text-align:center;}.webex-circles .cont-3{text-align:center;}.webex-circles .cont-4{text-align:center;}.webex-circles .circle{display:inline-block;vertical-align:top;margin-left:10px;margin-right:10px;width:105px;}.webex-circles .circle span.cont{width:105px;height:105px;border-radius:50%;background-color:#f26525;display:inline-block;vertical-align:middle;margin-bottom:10px;}.webex-circles .circle span.cont:hover{box-shadow:0 0 0 3px white;}.webex-circles .circle span.cont img{margin-top:20px;}.webex-circles .circle span.title{font-weight:bold;text-transform:uppercase;font-size:12px;}.webex-circles .circle:hover span.title{color:#fff;}.webex-circles a{color:inherit;}.webex-circles a:hover{text-decoration:none;}
+
+.webex-circles .circle2{
+    display: inline-block;
+    text-align: center;
+    width: 77px;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+}
+.webex-circles .circle2 span.title{text-transform:uppercase;font-size:10px;}
+.webex-circles .circle2 img{display:block; margin: 0 auto 10px; height: 70px;}
+.webex-circles a{color:#fff;}
+.webex-circles a:hover{text-decoration:none;}.webex-circles .cont-4{float:left;}
+.webex-circles .btn-cont {
+    float: left;
+    padding: 17px 10px;
+}
+.webex-circles .btn-cont a{
+	border:1px solid #fff;
+	border-radius:20px;
+	padding:10px 30px;
+	text-transform:uppercase;
+	margin-top:10px;
+	white-space: nowrap;
+}
+
+/* END Circles from moda cafe */
+/* SCROLLIFY button */
+
+#scroll, .fa.fa-angle-down {
+    font-size: 24px;
+	color: white;
+	line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	margin: auto;
+	text-align: center;
+}
+#scroll {
+	display: inline-block;
+	z-index: 5;
+    bottom: 40px;
+    position: fixed;
+    right: 0;
+	left: 0;
+	border: 0px solid;
+	
+	pointer-events: stroke;
+	cursor: pointer;
+	
+	transition: all 0.3s;
+    -webkit-animation: 2s arrowflow infinite ease;
+	animation: 2s arrowflow infinite ease;
+}
+#scroll2 {
+    font-size: 24px;
+	color: white;
+	line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+	margin: 0 auto;
+	text-align: center;
+	float: left;
+	clear: both;
+	padding: 17px 10px;
+	opacity: 0;
+}
+#scroll2 > .fa.fa-angle-down {
+	border: 0px solid;
+}
+.fa.fa-angle-down {
+	border: 1px solid #fff;
+    -webkit-animation: 3s fadein ease 0s normal 1;
+    animation: 3s fadein ease 0s normal 1;
+} 
+#scroll:hover, #scroll:active {
+	/* background: rgba(255, 255, 255, .3);*/
+	background: #071232;
+	color: #fff;
+    animation-play-state: paused;
+}
+.hov {
+	background: #f26525;
+    -webkit-animation: none!important;
+    animation: none!important;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* END SCROLLIFY */
+
+#directions {
+	height: 113%!important;
+    position: relative;
+    padding: 130px 15px;
+    margin-top: 100px;
+    overflow: visible;
+    background: white url("../img/moda/main-background2-2018.png") center center no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+#directions .hdr1 {
+    color: #071435;
+    font-weight: 300;
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 100px;
+}
+#directions .hdr2 {
+    color: #071435;
+    font-weight: bold;
+    font-size: 80px;
+    text-transform: uppercase;
+    line-height: 60px;
+    padding-bottom: 40px;
+}
+#directions .hdr3 {
+    color: #fff;
+    background-color: #f26525;
+    padding: 8px 60px;
+    display: inline;
+    font-weight: 300;
+    font-size: 23px;
+}
+#directions ul.out {
+    padding-left: 0;
+    padding-top: 40px;
+}
+#directions li {
+	height: auto;
+}
+
+#directions ul.out > li {
+    float: left;
+    color: #071435;
+    font-size: 40px;
+    font-weight: 300;
+	background: url("../img/moda/list-bullet-small.png") no-repeat 0px 10px;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 10px 0 0 80px;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    min-width: 100px;
+}
+#directions ul.out > li ul {
+    margin-top: 20px;
+    padding-left: 30px;
+    list-style-type: disc;
+    color: #21397e;
+}
+#directions ul.out > li ul {
+    list-style-type: disc;
+    color: #21397e;
+}
+#directions ul.out > li ul li {
+    padding-left: 10px;
+    font-size: 17px;
+    color: #21397e;
+    text-transform: none;
+}
+#directions ul.out > li ul.thin {
+}
+#directions ul.out > li:nth-child(3) {
+    padding-bottom: 175px;
+}
+.sec5 {
+    background-color: white;
+    position: relative;
+}
+.sec5 .hdr1 {
+    color: #3d454a;
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+		text-align: center;
+		margin: 0px auto;
+		width: 100%;
+		clear: both;
+}
+.sec5 iframe.youtube {
+    width: 636px;
+    height: 350px;
+}
+.devide-footer {
+    height: 190px;
+    background-image: url("../img/moda/main-background4.png");
+    background-size: cover;
+    background-position: center;
+    background-color: white;
+}
+
+footer {
+    background-repeat: no-repeat;
+    background-color: #14c18b;
+    color: #fff;
+}
+footer img {
+	padding: 10px;
+}
+footer .container {
+    padding-top: 10px;
+}
+.addr {
+	background: url("../img/moda/icons/footer-icon1.png") 15px 0 no-repeat transparent;
+}
+.contact  {
+	background: url("../img/moda/icons/footer-icon2.png") 15px 0 no-repeat transparent;
+}
+footer .addr .addr-text, footer .contact-text {
+
+    text-align: left;
+    margin-left: 119px;
+    padding-bottom: 27px;
+
+}
+footer .contact .contact-text .call {
+
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 2px 1px;
+    background-image: linear-gradient(to right,white 33%,rgba(255,255,255,0) 0%);
+    background-image: -webkit-linear-gradient(to right,white 33%,rgba(255,255,255,0) 0%);
+
+}
+footer  img {
+    margin-right: 10px;
+    display: block;
+}
+@-webkit-keyframes arrowflow {
+	0%,100% {
+		bottom:30px;
+	}
+	50% {
+		bottom:50px;
+	}
+}
+
+@keyframes  arrowflow {
+	0%,100% {
+		bottom:30px;
+	}
+	50% {
+		bottom:50px;
+	}
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}

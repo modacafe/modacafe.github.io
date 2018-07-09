@@ -1,0 +1,101 @@
+<div class="text-left" id="home" style="background-image: url({% include relative-src.html src=page.hero_img %})">
+	<div class="container">
+		<!-- 38% -->
+		<div class="row">
+			<div class="heading col-xl-6 col-md-6 col-sm-12 col-xs-12 clearfix">
+				<h1>{{ page.heading }}</h1>
+				<span class="hidden-sm hidden-xs">{{ page.description }}</span>
+			</div> 
+		</div>
+
+		<!-- 47% -->
+		<div class="circle-menu">
+			<div class="sec1">
+				<div class="webex-circles">
+					<a class="circle2" href="/menu-corp/business">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-biz.png">
+						<span class="title">
+							Бизнес Трэвел
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/incentive-tours">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-insentive.png">
+						<span class="title">
+							Insentive туры
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/conferences">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-conf.png">
+						<span class="title">
+							Конференции
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/teambuilding">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-team.png">
+						<span class="title">
+							Тимбилдинг
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/event-events">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-event.png">
+						<span class="title">
+							Event мероприятия
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/poster">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-exhibition.png">
+						<span class="title">
+							Афиша
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/immersive-tours">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-immercive.png">
+						<span class="title">
+							Иммерсивные туры
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/vip-aviation">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-vip-avia.png">
+						<span class="title">
+							Vip-авиация
+						</span>
+					</a>
+					
+					<a class="circle2" href="/menu-corp/specialprojects">
+						<img src="{{ site.baseurl }}/img/moda/webex/icon-spec-prj.png">
+						<span class="title">
+							Спецпроекты
+						</span>
+					</a>  
+				</div>  
+			</div>
+			<div class="sec1-1">
+				<div class="webex-circles">
+					<div class="btn-cont">
+						<a class="big-button" href="#">Подобрать тур в любой уголок мира</a>
+					</div>
+					<div class="btn-cont">
+						<a class="big-button" href="#">Необычные отели мира</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		{% if page.layout != 'plug' %}
+			<!-- 15% -->
+			<a href="#overview" id="scroll">
+				<div class="fa fa-angle-down {{ page.rainbow }}"></div>
+			</a>
+			<a href="#overview" id="scroll2">
+				<div class="fa fa-angle-down"></div>
+			</a>
+		{% endif %}
+	</div>
+</div>

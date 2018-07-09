@@ -1,0 +1,139 @@
+@media screen and (max-width: 1350px) {
+	#tf-menu.navbar-default .navbar-nav > li > a {
+		width: 57px;
+		height: 41px;
+		overflow: hidden;
+	}
+	.sec3 {
+		background-position: 87% center;
+	}
+}
+@media screen and (orientation: portrait) and (max-width: 992px) {
+	.heading {
+		height: auto;
+	}
+	.heading h1 {
+		padding-top: 35%;
+		position: relative;
+	}
+	.heading span {
+		position: relative;
+		bottom: 0;
+	}
+	.sec1 {
+		position: initial;
+		clear: both;
+		padding: 30px 0 0;
+	}
+	.sec1-1 {
+		position: initial;
+		clear: both;
+		padding: 30px 0;
+	}
+}
+@media screen and (orientation: landscape) and (max-width: 992px), 
+		screen and (orientation: landscape) and (max-height: 577px) {
+	.heading {
+		height: auto;
+	}
+	.heading h1 { 
+		padding-top: 15%;
+		position: relative;	
+	}
+	.heading span {
+		position: relative;
+		bottom: 0;
+	}
+	.sec1 {
+		position: initial;
+		clear: both;
+		padding: 30px 0 0;
+	}
+	.sec1-1 {
+		position: initial;
+		clear: both;
+		padding: 30px 0;
+	}
+}
+
+@media screen and (max-width: 766px) {
+	#tf-menu.navbar-default .navbar-nav > li > a {
+		width: 100%;
+		height: 47px;
+		overflow: hidden;
+		text-align: center;
+	}
+	.sec2 .text {
+		padding: 0;
+	}
+	.label-text > img {
+		display: none;
+	}
+	.label-text {
+		text-align: center!important;
+		padding-left: 0px;
+	}
+	.label-text > h4 {
+		font-size: 27px;
+		margin: 0;
+		line-height: 25px;
+	}
+	.label-text > small {
+		font-size: 9px;
+		text-transform: uppercase;
+	}
+	.left-pos, .right-pos {
+		width: 100px;
+	}
+	.right-pos {
+		right: calc(50% - 50px) ;
+	}
+	.left-pos {
+		left: calc(50% - 50px) ;
+	}
+	.sec3 {
+		background-position: 47% center;
+	}
+	.sec3 .hdr3 {
+		display: block!important;
+		line-height: 35px;
+		text-align: center;
+	}
+	.sec3 ul.out > li {
+		margin-left: -25px;
+		background-image: none;	
+	}
+	.sec3 .hdr1 {
+		font-size: 33px;
+		text-align: center;
+	}
+	#directions .hdr2 {
+		font-size: 33px;
+		line-height: 37px;
+		padding-bottom: 15px;
+		text-align: center;
+	}
+	.webex-circles .btn-cont a{
+		font-size: 10px;
+	}
+	.content h1 {padding: 37% 13px 10%}
+}
+@media screen and (max-width: 370px) {
+	.phone-moda {
+		clear: both;
+		width: 100%;
+	}
+	#tf-menu { 
+		padding-bottom: 0;
+	}
+	#directions ul.out > li ul{
+		margin-left: -45px;
+	}
+}
+
+@media (max-width: 360px){
+    .hover-bg .label-text {
+        padding: 1px 5%;
+    }
+}
+
