@@ -19,11 +19,9 @@ function main() {
 
           if ($(window).scrollTop() == 0) {
             toggleon = true;
-            $('.phone-moda').html('toggleon = true');
           } 
           if ($(window).scrollTop() != 0) {
             toggleon = false;
-            $('.phone-moda').html('toggleon = false');
           }
 
           if ($(window).scrollTop() > navHeight) {
