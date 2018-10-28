@@ -1058,6 +1058,7 @@ nav#footer p{
 .sec5 {
     background-color: white;
     position: relative;
+    margin-top: -130px;
 }
 .sec5 .section-title {
 	margin: -15px auto 50px;
