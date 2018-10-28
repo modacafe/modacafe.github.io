@@ -11,17 +11,24 @@
 			<div class="logo">
 				<a class="navbar-brand" href="{{ site.baseurl }}/index.html"><img class="logo img-responsive" src="{{ site.baseurl }}/img/moda/logo2.png"></a>
 			</div>
-			<div class="logo-text hidden-xs">давайте <br> делать бизнес <br> вместе</div>
-			
+			{% if page.url contains 'individ' %}
+				<div class="logo-text hidden-xs">Эксперт на рынке  <br> туристических услуг  <br> с 2006 года</div>
+			{% else %}
+				<div class="logo-text hidden-xs">давайте <br> делать бизнес <br> вместе</div>
+			{% endif %}
 			<a href="tel:+74996478807" class="phone-moda">8 (499) 647-88-07</a>
 		</div>
 		<div class="collapse navbar-collapse" id="bs-navbar-collapse-3">
 		<ul class="nav navbar-nav navbar-right">
-			<li><a href="#" class="callback">Заказать звонок →</a></li>
-			<li><a href="#" class="about">О нас</a></li>
-			<li><a href="#" class="ind-travel">Индивидуальный туризм</a></li>
-			<li><a href="#" class="portfolio">Портфолио</a></li>
-			<li><a href="#" class="menu-search">Поиск</a></li> 
+			<li><a href="{{ site.baseurl }}/in_construction" class="callback">Заказать звонок →</a></li>
+			<li><a href="{{ site.baseurl }}/in_construction" class="about">О нас</a></li>
+			{% if page.url contains 'individ' %}
+				<li><a href="{{ site.baseurl }}/" class="ind-travel">Корпоративный туризм</a></li>
+			{% else %}
+				<li><a href="{{ site.baseurl }}/individ" class="ind-travel">Индивидуальный туризм</a></li>
+			{% endif %}
+			<li><a href="{{ site.baseurl }}/in_construction" class="portfolio">Портфолио</a></li>
+			<li><a href="{{ site.baseurl }}/in_construction" class="menu-search">Поиск</a></li> 
 		</ul>
 		</div>
 	</div>

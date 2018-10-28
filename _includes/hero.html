@@ -1,6 +1,6 @@
 <div class="text-left" id="home" style="background-image: url({% include relative-src.html src=page.hero_img %})">
 	<div class="container">
-		<!-- 38% -->
+
 		<div class="row">
 			<div class="heading col-xl-6 col-md-6 col-sm-12 col-xs-12 clearfix">
 				<h1>{{ page.heading }}</h1>
@@ -8,11 +8,104 @@
 			</div> 
 		</div>
 
-		<!-- 47% -->
 		<div class="circle-menu">
+
+		{% if page.url contains 'individ' %}
 			<div class="sec1">
 				<div class="webex-circles">
-					<a class="circle2" href="/menu-corp/business">
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-cubes-icon">
+						</figure>
+						<span class="title">
+							Taylor Made
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon3">
+						</figure>
+						<span class="title">
+							Family Friendly
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon4">
+						</figure>
+						<span class="title">
+							Авторские туры
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon2">
+						</figure>
+						<span class="title">
+							Свадебные туры
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon5">
+						</figure>
+						<span class="title">
+							Экстримальный туризм
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon6">
+						</figure>
+						<span class="title">
+							Топ отелей
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon7">
+						</figure>
+						<span class="title">
+							Vip-авиация
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon8">
+						</figure>
+						<span class="title">
+							Афиша
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon9">
+						</figure>
+						<span class="title">
+							Спецпроекты
+						</span>
+					</a>  
+
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-hands-icon">
+						</figure>
+						<span class="title">
+							Консьерж служба
+						</span>
+					</a>
+					
+					<a class="bubble" href="/in_construction/">
+						<figure class="circle3 icon-moda-icon1">
+						</figure>
+						<span class="title">
+							Immersive тур
+						</span>
+					</a>
+				</div>  
+			</div>
+		{% else %}
+			<div class="sec1">
+				<div class="webex-circles">
+					<a class="circle2" href="/in_construction/">
 						<img src="{{ site.baseurl }}/img/moda/webex/icon-biz.png">
 						<span class="title">
 							Бизнес Трэвел
@@ -76,26 +169,30 @@
 					</a>  
 				</div>  
 			</div>
+		{% endif %}
+
+
 			<div class="sec1-1">
 				<div class="webex-circles">
 					<div class="btn-cont">
-						<a class="big-button" href="#">Подобрать тур в любой уголок мира</a>
+						<a class="big-button" href="{{ site.baseurl }}/in_construction">Подобрать тур в любой уголок мира</a>
 					</div>
 					<div class="btn-cont">
-						<a class="big-button" href="#">Необычные отели мира</a>
+						<a class="big-button" href="{{ site.baseurl }}/in_construction">Необычные отели мира</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
 		{% if page.layout != 'plug' %}
-			<!-- 15% -->
-			<a href="#overview" id="scroll">
-				<div class="fa fa-angle-down {{ page.rainbow }}"></div>
+		<div class="scroll-cont">
+			<a href="#overview" id="scroll" class="icon-moda-Scroll-icon1 fa-flip-horizontal {{ page.rainbow }}">
+				<div class=""></div>
 			</a>
 			<a href="#overview" id="scroll2">
 				<div class="fa fa-angle-down"></div>
 			</a>
+		</div>
 		{% endif %}
 	</div>
 </div>

@@ -1,3 +1,16 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+	src: local('Open Sans Regular'), local('OpenSans-Regular'),
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+}
 /* open-sans-300 - latin_cyrillic */
 @font-face {
     font-family: 'Open Sans';
@@ -178,5 +191,116 @@
          url('../fonts/roboto/roboto-condensed-v16-cyrillic-700.woff') format('woff'), /* Modern Browsers */
          url('../fonts/roboto/roboto-condensed-v16-cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
          url('../fonts/roboto/roboto-condensed-v16-cyrillic-700.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+  }
+
+  @font-face {
+    font-family: 'modaFont';
+    src:  url('../fonts/modafont/modaFont.eot?tdct9j');
+    src:  url('../fonts/modafont/modaFont.eot?tdct9j#iefix') format('embedded-opentype'),
+      url('../fonts/modafont/modaFont.ttf?tdct9j') format('truetype'),
+      url('../fonts/modafont/modaFont.woff?tdct9j') format('woff'),
+      url('../fonts/modafont/modaFont.svg?tdct9j#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  [class^="icon-moda-"], [class*=" icon-moda-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'modaFont' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-moda-Scroll-icon1:before {
+    content: "\e900";
+  }
+  .icon-moda-Scroll-icon:before {
+    content: "\e901";
+  }
+  .icon-moda-cubes-icon:before {
+    content: "\e902";
+  }
+  .icon-moda-icon3:before {
+    content: "\e903";
+  }
+  .icon-moda-icon4:before {
+    content: "\e904";
+  }
+  .icon-moda-icon5:before {
+    content: "\e905";
+  }
+  .icon-moda-icon6:before {
+    content: "\e906";
+  }
+  .icon-moda-icon7:before {
+    content: "\e907";
+  }
+  .icon-moda-icon8:before {
+    content: "\e908";
+  }
+  .icon-moda-icon9:before {
+    content: "\e909";
+  }
+  .icon-moda-hands-icon:before {
+    content: "\e90a";
+  }
+  .icon-moda-icon1:before {
+    content: "\e90b";
+  }
+  .icon-moda-icon2:before {
+    content: "\e90c";
+  }
+  .icon-moda-info:before {
+    content: "\ea0c";
+  }
+  .icon-moda-cancel-circle:before {
+    content: "\ea0d";
+  }
+  .icon-moda-cross:before {
+    content: "\ea0f";
+  }
+  .icon-moda-facebook2:before {
+    content: "\ea91";
+  }
+  .icon-moda-instagram:before {
+    content: "\ea92";
+  }
+  .icon-moda-whatsapp:before {
+    content: "\ea93";
+  }
+  .icon-moda-telegram:before {
+    content: "\ea95";
+  }
+  .icon-moda-twitter:before {
+    content: "\ea96";
+  }
+  .icon-moda-vk:before {
+    content: "\ea98";
+  }
+  .icon-moda-rss:before {
+    content: "\ea9b";
+  }
+  .icon-moda-rss2:before {
+    content: "\ea9c";
+  }
+  .icon-moda-youtube:before {
+    content: "\ea9d";
+  }
+  .icon-moda-youtube2:before {
+    content: "\ea9e";
+  }
+  .icon-moda-vimeo:before {
+    content: "\eaa0";
+  }
+  .icon-moda-vimeo2:before {
+    content: "\eaa1";
   }
   

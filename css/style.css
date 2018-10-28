@@ -1,16 +1,3 @@
-/* open-sans-regular - latin_cyrillic */
-@font-face {
-	font-family: 'Open Sans';
-	font-style: normal;
-	font-weight: 400;
-	src: url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
-	src: local('Open Sans Regular'), local('OpenSans-Regular'),
-		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
-		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-		 url('../fonts/OpenSans/open-sans-v15-latin_cyrillic-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
-}
 .color-main {
 	color: #ff7f27;
 }  
@@ -56,29 +43,84 @@ h1 {
 	height: 53vh;
 	position: relative;
 }
-#scroll {
-	height: 15vh;
+.bubble {
+    display: inline-block;
+    width: 77px;
+    vertical-align: top;
+    margin: 0 10px 0 0;
+    text-align: center;
+}
+.bubble span.title {
+    text-transform: uppercase;
+	font-size: 10px;
+	text-align: center;
+}
+.bubble figure::before {
+    font-size: 57px;
+    line-height: 77px;
+}
+
+.circle3 {
+    margin: 0 0 10px;
+    border-radius: 50%;
+    width: 100%;
+    height: 77px;
+    text-align: center;
+    vertical-align: middle;
+}
+.circle3.icon-moda-cubes-icon {
+    background: linear-gradient( #ff5d41, #ff2d5a);
+}
+.circle3.icon-moda-icon3 {
+    background: linear-gradient( #ff9501, #ff7a2f);
+}
+.circle3.icon-moda-icon4 {
+    background: linear-gradient( #216df7, #1ec4fe);
+}
+.circle3.icon-moda-icon2 {
+    background: linear-gradient( #6c3297, #541688);
+}
+.circle3.icon-moda-icon5 {
+    background: linear-gradient( #9d9ea0, #67686a);
+}
+.circle3.icon-moda-icon6 {
+    background: linear-gradient( #cdb40d, #eedb38);
+}
+.circle3.icon-moda-icon7 {
+    background: linear-gradient( #43d829, #0bca16);
+}
+.circle3.icon-moda-icon8 {
+    background: linear-gradient( #216df7, #1ec4fe);
+}
+.circle3.icon-moda-icon9 {
+    background: linear-gradient( #ff9501, #ff7a2f);
+}
+.circle3.icon-moda-hands-icon {
+    background: linear-gradient( #6c3297, #541688);
+}
+.circle3.icon-moda-icon1 {
+    background: linear-gradient( #cdb40d, #eedb38);
 }
 .rb-ff8916 {
-	background-color: #ff8916;
+	color: #ff8916;
 }
 .rb-1f9dfb {
-	background-color: #1f9dfb;
+	color: #1f9dfb;
 }
 .rb-ff4b4a {
-	background-color: #ff4b4a;
+	color: #ff4b4a;
 }
 .rb-8e8f91 {
-	background-color: #8e8f91;
+	color: #8e8f91;
 }
 .rb-20dc27 {
-	background-color: #20dc27;
+	color: #20dc27;
 }
 .rb-692e95 {
-	background-color: #692e95;
+	color: #692e95;
 }
 .rb-cfb60f {
-	background-color: #cfb60f;
+	color: #cfb60f;
 }
 
 h1 strong {
@@ -98,6 +140,11 @@ h3{
     font-weight: bold;
     font-size: 40px;
     color: #ff7f27;
+}
+.sec2 span {
+    font-size: 24px;
+	color: #3d454a;
+	font-weight: 300;
 }
 h4 {
 	text-transform: uppercase;
@@ -201,7 +248,7 @@ width: 117px;
     font-size: 11px;
     font-weight: bold;
     margin: 0 20px;
-    width: 95px;
+    width: 115px;
     text-transform: uppercase;
     color: #f26525;
 	font-family: "Roboto Condensed",sans-serif;
@@ -216,12 +263,19 @@ width: 117px;
     color: white;
     text-align: center;
 }
-#tf-menu.navbar-default .navbar-nav > li > a {
+.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
 	color: #FFF;
 	font-size: 10px;
 	letter-spacing: 1px;
 	text-decoration: underline;
+}
+a:hover,
+.navbar-default .navbar-nav > li > a:hover, 
+.navbar-default .navbar-nav > li > a:focus {
+	color: #f26525;
+	transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+	-webkit-transition: all .7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .on {
 	background-color: #071232 !important;
@@ -306,7 +360,7 @@ width: 117px;
   
 /* Home Style */
 #home {
-	background: url(../img/moda/hero/bg-biz-new.jpg);
+	background: url("../img/moda/hero/bg-biz-new.jpg");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -425,50 +479,96 @@ img.img-circle.team-img {
 	margin-top: 40px;
 }
 .service-card {
-    margin-bottom: -10px;
+	height: 515px;
 	padding: 0 !important;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 .service-card-img {
-    height: 400px;
-    max-width: 636px;
-    margin: -10px auto;
+	margin-top: -27px;
+    height: 407px;
+    max-width: 967px;
+    border-radius: 0% 41% 0% 0% / 0% 17%;
+	background-size: contain;
+	text-align: center;
+}
+
+.sert-logo {
+    width: 100%;
+    padding: 105px 0 10px;
+	height: 150px;
+	background: url("../img/moda/gold_logo.png") no-repeat center center transparent;
+}
+.sert-text-block {
+	font-family: "Open Sans";
+	text-align: center;
+	font-size: 21px;
+	color: rgb(220, 193, 92);
+}
+.sert-text-block b {
+    font-size: 40px;
+    text-transform: uppercase;
+    line-height: 0.5;
+    font-weight: 600;
+}
+.sert-name-under {
+	line-height: 1.385;
+    font-weight: 300;
+}
+.sert-add-text {
+	line-height: 1.385;
+	font-weight: 600;
+	margin-top: 35px;
+}
+  
+  
+.figure_right .service-card-img {
+    border-radius: 41% 0% 0% 0% / 17% 0%;
 }
 
 	/* matrix of services */
 	.container-fluid {
-		max-width: 1272px;
+		max-width: 1926px;
 		padding: 0;
 	}
 	.label-text {
-		height: 160px;
+		height: 170px;
 		color: white;
-		padding-top: 5px;
+		padding-top: 11px;
 		position: relative;
 	}
 	.label-text > img {
 		float: left; 
-	}  
-	.label-text > small {
+	}
+	.service-text {
+		float: left;
+		position: relative;
+		height: 110px;
+		display: inline;
+		width: 65%;
+	}
+	.label-text > small,
+	.service-text small {
 		font-size: 15px;
 		text-transform: uppercase;
 	}
-	.label-text > h4 {
+	.label-text > h4,
+	.service-text h4 {
 		font-size: 35px;
 		margin: 0;
-		line-height: 27px;
+		line-height: 30px;
+		font-weight: 700;
 	}
 	.details {
 		margin-top: 5px;
 		position: absolute;
-		bottom: 60px;
+		bottom: 50px;
 	}
-	.left-pos{
-		left: 105px;
-	}
-	.right-pos{
-		right: 105px;
+	.details2 {
+
+		position: absolute;
+		bottom: 5px;
+	
 	}
 	.details a {
 		color: #3d454a;
@@ -481,90 +581,187 @@ img.img-circle.team-img {
 	.details a:hover {
 		text-decoration:  underline;
 	}
-.meeting1 {
-	background: url("../img/moda/bg-matrix/bg1.jpg") center 10px no-repeat transparent;
-} 
-.meeting1 .label-text {
-	background: url("../img/moda/headers/header1.png") bottom center no-repeat transparent;
-	text-align: left; padding-left: 5px;
+	.details2 a {
+		color: #3d454a;
+		background-color: #fff;
+		font-weight: bold;
+		font-size: 10px;
+		padding: 3px 17px;
+		border-radius: 20px;
+	}
+	.details2 a:hover {
+		text-decoration:  underline;
+	}
+.figure_left, .figure_right {
+	max-width: 963px;
+	position: relative;
+	margin: 0 auto;
 }
-.incentiv2 {
-	background: url("../img/moda/bg-matrix/bg2.jpg") center 10px no-repeat transparent;
+.figure_left {
+	border-radius: 0 14px 0 0;
 }
-.incentiv2 .label-text {
-	background: url("../img/moda/headers/header2.png") bottom center no-repeat transparent;
-	text-align: right;  padding-right: 5px;
-} 
-.incentiv2 img {
+.figure_right {
+	border-radius: 14px 0 0 0;
+}
+.figure_left .label-text {
+	text-align: left;
+}
+.figure_right .label-text {
+	text-align: right;
+}
+.figure_left img {
+	float: left;
+}
+.figure_right img, 
+.figure_right .circle4,
+.figure_right .service-text {
 	float: right;
 }
-.conferenc3 {
-	background: url("../img/moda/bg-matrix/bg3.jpg") center 10px no-repeat transparent;
-}
-.conferenc3 .label-text {
-	background: url("../img/moda/headers/header3.png") bottom center no-repeat transparent;
-	text-align: left; padding-left: 5px;
-} 
-.event4 {
-	background: url("../img/moda/bg-matrix/bg4.jpg") center 10px no-repeat transparent;
-}
-.event4 .label-text {
-	background: url("../img/moda/headers/header4.png") bottom center no-repeat transparent;
-	text-align: right;  padding-right: 5px;
-} 
-.event4 img {
+.figure_right .circle4 {
+	margin-right: 75px;
 	float: right;
 }
-.immersive5 {
-	background: url("../img/moda/bg-matrix/bg5.jpg") center 10px no-repeat transparent;
+.figure_left .circle4 {
+	margin-left: 75px;
+	float: left;
 }
-.immersive5 .label-text {
-	background: url("../img/moda/headers/header5.png") bottom center no-repeat transparent;
-	text-align: left; padding-left: 5px;
+.figure_right .details2 {
+	right: 0;
 }
-.team6 {
-	background: url("../img/moda/bg-matrix/bg6.jpg") center 10px no-repeat transparent;
-}
-.team6 .label-text {
-	background: url("../img/moda/headers/header6.png") bottom center no-repeat transparent;
-	text-align: right;  padding-right: 5px;
-}
-.team6 img {
-	float: right;
-}
-.afisha7 {
-	background: url("../img/moda/bg-matrix/bg7.jpg") center 10px no-repeat transparent;
-}
-.afisha7 .label-text {
-	background: url("../img/moda/headers/header7.png") bottom center no-repeat transparent;
-	text-align: left; padding-left: 5px;
-}
-.vip-avia8 {
-	background: url("../img/moda/bg-matrix/bg8.jpg") center 10px no-repeat transparent;
-}
-.vip-avia8 .label-text {
-	background: url("../img/moda/headers/header8.png") bottom center no-repeat transparent;
-	text-align: right;  padding-right: 5px;
+#meeting1 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg1.jpg") top center no-repeat transparent;
 } 
-.vip-avia8 img {
-	float: right;
-}
-.special9 {
-	background: url("../img/moda/bg-matrix/bg9.jpg") center 10px no-repeat transparent;
-}
-.special9 .label-text {
-	background: url("../img/moda/headers/header9.png") bottom center no-repeat transparent;
-	text-align: left; padding-left: 5px;
+#taylor .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind1.jpg") top center no-repeat transparent;
 } 
-.sertificat10 {
-	background: url("../img/moda/bg-matrix/bg10.jpg") center 10px no-repeat transparent;
+#meeting1.figure_left,
+#taylor.figure_left {
+	background: linear-gradient(rgb(255, 93, 65), rgb(255, 45, 90), rgb(255, 93, 65));
+	background-size: 400%;
 }
-.sertificat10 .label-text {
-	background: url("../img/moda/headers/header10.png") bottom center no-repeat transparent;
-	text-align: right;  padding-right: 5px;
+#incentiv2 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg2.jpg") top center no-repeat transparent;
+} 
+#Family .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind2.jpg") top center no-repeat transparent;
+} 
+#incentiv2.figure_right,
+#Family.figure_right {
+	background: linear-gradient(78deg, #ff9501, #ff7a2f);
 }
-.sertificat10 img {
-	float: right;
+#conferenc3 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg3.jpg") top center no-repeat transparent;
+} 
+#author .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind3.jpg") top center no-repeat transparent;
+} 
+#conferenc3.figure_left,
+#author.figure_left {
+	background: linear-gradient(105deg, rgb(33, 109, 247), rgb(30, 196, 254));
+}
+#event4 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg4.jpg") top center no-repeat transparent;
+} 
+#wedding .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind4.jpg") top center no-repeat transparent;
+} 
+#event4.figure_right {
+	background: linear-gradient(105deg, rgb(67, 216, 21), rgb(11, 202, 22));
+}
+#wedding.figure_right {
+	background: linear-gradient(105deg, #6c3297, #541688);
+}
+
+#immersive5 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg5.jpg") top center no-repeat transparent;
+} 
+#extreme .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind5.jpg") top center no-repeat transparent;
+} 
+#immersive5.figure_left {
+	background: linear-gradient(105deg, rgb(108, 50, 151), rgb(84, 22, 136));
+}
+#extreme.figure_left {
+	background: linear-gradient(105deg, rgb(157, 158, 160), rgb(103, 104, 106));	
+}
+#team6 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg6.jpg") top center no-repeat transparent;
+} 
+#hotels .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind6.jpg") top center no-repeat transparent;
+} 
+#team6.figure_right {
+	background: linear-gradient(105deg, rgb(157, 158, 160), rgb(103, 104, 106));	
+}
+#hotels.figure_right {
+	background: linear-gradient( #cdb40d, #eedb38);	
+}
+#afisha7 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg7.jpg") top center no-repeat transparent;
+} 
+#VIP-avia .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind7.jpg") top center no-repeat transparent;
+} 
+#afisha7.figure_left {
+	background: linear-gradient(105deg, #cdb40d, #eedb38);
+}
+#VIP-avia.figure_left {
+	background: linear-gradient(105deg, #43d829, #0bca16);
+}
+#vip-avia8 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg8.jpg") top center no-repeat transparent;
+} 
+#poster .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind8.jpg") top center no-repeat transparent;
+} 
+#vip-avia8.figure_right,
+#poster.figure_right {
+	background: linear-gradient(105deg, #216df7, #1ec4fe);
+}
+#special9 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg9.jpg") top center no-repeat transparent;
+} 
+#special .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind9.jpg") top center no-repeat transparent;
+}
+#immersive .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind11.jpg") top center no-repeat transparent;
+}
+#special9.figure_left {
+	background: linear-gradient(105deg, #ff5d41, #ff2d5a);
+}
+#special.figure_left {
+	background: linear-gradient(105deg, #ff9501, #ff7a2f);
+}
+#immersive.figure_left {
+	background: linear-gradient(105deg, #cdb40d, #eedb38);
+}
+#sertificat10 .service-card-img {
+	background: url("../img/moda/bg-matrix/bg10.jpg") top center no-repeat transparent;
+} 
+#Concierge .service-card-img {
+	background: url("../img/moda/bg-matrix/bg-ind10.jpg") top center no-repeat transparent;
+} 
+#sertificat10.figure_right {
+	background: linear-gradient(105deg, #292929, #707070);
+}
+#Concierge.figure_right {
+	background: linear-gradient(105deg, #6c3297, #541688);
+}
+.circle4 {
+	width: 135px;
+}
+.circle4 figure {
+    margin: 10px auto;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border: 1px solid;
+}
+.circle4 figure::before {
+    line-height: 95px;
+    font-size: 75px;
 }
 /* Contact Section */
 #tf-contact{
@@ -693,34 +890,46 @@ nav#footer p{
 }
 
 /* END Circles from moda cafe */
-/* SCROLLIFY button */
+
+
+/* SCROLL 
 
 #scroll, .fa.fa-angle-down {
     font-size: 24px;
-	color: white;
+	color: rgb(36, 17, 17);
 	line-height: 40px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
 	margin: auto;
 	text-align: center;
+}*/
+.scroll-cont a {
+	color: white;
 }
 #scroll {
-	display: inline-block;
-	z-index: 5;
-    bottom: 40px;
+    font-size: 50px;
+    display: inline-block;
+    z-index: 5;
     position: fixed;
+    margin: auto;
+    text-align: center;
     right: 0;
-	left: 0;
-	border: 0px solid;
-	
-	pointer-events: stroke;
-	cursor: pointer;
-	
-	transition: all 0.3s;
+    left: 0;
+    border: 0px solid;
+    pointer-events: stroke;
+    cursor: pointer;
+    transition: all 0.3s;
     -webkit-animation: 2s arrowflow infinite ease;
-	animation: 2s arrowflow infinite ease;
+    animation: 2s arrowflow infinite ease;
+    width: 55px;
+    height: 55px;
+    /* text-shadow: 0px 0px 6px rgba(255,255,255,0.7); */
 }
+.rotate {
+    transform: rotate(180deg);
+}
+
 #scroll2 {
     font-size: 24px;
 	color: white;
@@ -745,37 +954,51 @@ nav#footer p{
 } 
 #scroll:hover, #scroll:active {
 	/* background: rgba(255, 255, 255, .3);*/
-	background: #071232;
-	color: #fff;
+	color: #f26525;
     animation-play-state: paused;
 }
-.hov {
-	background: #f26525;
-    -webkit-animation: none!important;
-    animation: none!important;
-}
-.rotate {
-    transform: rotate(180deg);
+.scroll-cont a.hov {
+	color: #071232;
+	animation-play-state: paused;
 }
 
 /* END SCROLLIFY */
 
 #directions {
-	height: 113%!important;
     position: relative;
-    padding: 130px 15px;
+    padding: 130px 0px;
     margin-top: 100px;
     overflow: visible;
-    background: white url("../img/moda/main-background2-2018.png") center center no-repeat;
-	background-size: cover;
-	background-position: center center;
+	/* для разрешения 1536 ---  background-position: -700px center; */
+}
+#directions .directions-bg {
+	padding: 0 25px;
+	margin: 0px;
+	width: 100%;
+	background: linear-gradient(90deg, #b6dbf3, #b5daf4);
+}
+#directions .directions-bg-top {
+
+    min-height: 270px;
+    background: url("../img/moda/bgs/dir111.png") bottom center no-repeat transparent;
+    background-size: contain;
+    width: 100%;
+	position: relative;
+	bottom: -70px;
+}
+#directions .directions-bg-bottom {
+    height: 797px;
+    background: url("../img/moda/bgs/dir333.png") top center no-repeat transparent;
+    background-size: contain;
+    width: 100%;
+    position: relative;
+    margin-top: -175px;
 }
 #directions .hdr1 {
     color: #071435;
     font-weight: 300;
     font-size: 40px;
     text-transform: uppercase;
-    margin-top: 100px;
 }
 #directions .hdr2 {
     color: #071435;
@@ -813,7 +1036,8 @@ nav#footer p{
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    min-width: 100px;
+	min-width: 100px;
+	z-index: 3;
 }
 #directions ul.out > li ul {
     margin-top: 20px;
@@ -831,14 +1055,12 @@ nav#footer p{
     color: #21397e;
     text-transform: none;
 }
-#directions ul.out > li ul.thin {
-}
-#directions ul.out > li:nth-child(3) {
-    padding-bottom: 175px;
-}
 .sec5 {
     background-color: white;
     position: relative;
+}
+.sec5 .section-title {
+	margin: -15px auto 50px;
 }
 .sec5 .hdr1 {
     color: #3d454a;
@@ -904,19 +1126,19 @@ footer  img {
 }
 @-webkit-keyframes arrowflow {
 	0%,100% {
-		bottom:30px;
+		bottom:15px;
 	}
 	50% {
-		bottom:50px;
+		bottom:35px;
 	}
 }
 
 @keyframes  arrowflow {
 	0%,100% {
-		bottom:30px;
+		bottom:15px;
 	}
 	50% {
-		bottom:50px;
+		bottom:35px;
 	}
 }
 

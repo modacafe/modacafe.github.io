@@ -26,14 +26,16 @@ function main() {
 
           if ($(window).scrollTop() > navHeight) {
               $('.navbar-default').addClass('on');
-              $('#scroll').css( "background", "#071232" );
-              $('#scroll').css( "animation-play-state", "paused" );
+              $('#scroll').addClass('hov');
+              $('#scroll').removeClass('icon-moda-Scroll-icon1');
+              $('#scroll').addClass('icon-moda-Scroll-icon');
           } else {
               if ($('#bs-navbar-collapse-3').hasClass('in') != true) {
                 $('.navbar-default').removeClass('on');
               }
-              $('#scroll').css( "background", "none" );
-              $('#scroll').css( "animation-play-state", "running" );
+              $('#scroll').removeClass('hov');
+              $('#scroll').removeClass('icon-moda-Scroll-icon');
+              $('#scroll').addClass('icon-moda-Scroll-icon1');
           }
           if ( ( $(document).height() - $(window).scrollTop() ) < 900) {
             $('#scroll').addClass('rotate');

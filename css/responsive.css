@@ -1,8 +1,26 @@
-@media screen and (max-width: 1350px) {
+@media screen and (max-width: 1280px) {
+	body {
+		font-size: 11px;
+	}
+	.sec2 span, .icon-list, #icons2.conferences ul li, .icon2team1 span {
+		font-size: 16px;
+	}
+	#icons2.conferences ul li {
+		min-height: 70px;
+	}
+	.text p {
+		font-size: 26px;
+	}
 	#tf-menu.navbar-default .navbar-nav > li > a {
 		width: 57px;
 		height: 41px;
 		overflow: hidden;
+	}
+	.ul-title {
+		font-size: 21px;
+	}
+	#directions .hdr1 {
+		margin-top: 25px;
 	}
 	.sec3 {
 		background-position: 87% center;
@@ -30,6 +48,12 @@
 		clear: both;
 		padding: 30px 0;
 	}
+	#icons2.conferences {
+		background-image: none;
+	}
+	#directions .directions-bg {
+		padding: 130px 25px;
+	}
 }
 @media screen and (orientation: landscape) and (max-width: 992px), 
 		screen and (orientation: landscape) and (max-height: 577px) {
@@ -37,7 +61,7 @@
 		height: auto;
 	}
 	.heading h1 { 
-		padding-top: 15%;
+		padding-top: 17%;
 		position: relative;	
 	}
 	.heading span {
@@ -54,6 +78,10 @@
 		clear: both;
 		padding: 30px 0;
 	}
+	#directions .directions-bg-bottom {
+		margin-top: -110px;
+		height: 500px;
+	}
 }
 
 @media screen and (max-width: 766px) {
@@ -66,17 +94,38 @@
 	.sec2 .text {
 		padding: 0;
 	}
-	.label-text > img {
+	.label-text > img,
+	.circle4 {
 		display: none;
 	}
+	.details2 {
+		position: relative;
+		bottom: -20px;
+		margin: 0 auto;
+	}
+	.service-text {
+		width: 100%;
+		text-align: center;
+	}
 	.label-text {
-		text-align: center!important;
-		padding-left: 0px;
+		padding-left: 0px;	
 	}
 	.label-text > h4 {
 		font-size: 27px;
 		margin: 0;
 		line-height: 25px;
+	}
+	.sert-text-block b {
+		font-size: 30px;
+	}
+	.sert-name-under {
+		font-size: 17px;
+	}
+	.sert-add-text {
+		margin: 0;
+	}
+	.sert-text-block p {
+		font-size: 21px;
 	}
 	.label-text > small {
 		font-size: 9px;
@@ -84,12 +133,6 @@
 	}
 	.left-pos, .right-pos {
 		width: 100px;
-	}
-	.right-pos {
-		right: calc(50% - 50px) ;
-	}
-	.left-pos {
-		left: calc(50% - 50px) ;
 	}
 	.sec3 {
 		background-position: 47% center;
@@ -107,8 +150,16 @@
 		font-size: 33px;
 		text-align: center;
 	}
+	#directions .directions-bg-top {
+		bottom: -25px;
+		min-height: 170px;
+	}
+	#directions .directions-bg-bottom {
+		margin-top: -110px;
+		height: 270px;
+	}
 	#directions .hdr2 {
-		font-size: 33px;
+		font-size: 40px;
 		line-height: 37px;
 		padding-bottom: 15px;
 		text-align: center;
@@ -119,12 +170,26 @@
 	.content h1 {padding: 37% 13px 10%}
 }
 @media screen and (max-width: 370px) {
+	#directions .directions-bg-top {
+		bottom: -25px;
+		min-height: 70px;
+	}
 	.phone-moda {
 		clear: both;
 		width: 100%;
 	}
 	#tf-menu { 
 		padding-bottom: 0;
+	}
+	
+	#directions .hdr1 {
+		font-size: 25px;
+	}
+	#directions .hdr2 {
+		font-size: 27px;
+	}
+	#directions .hdr3 {
+		padding: 7px 10px;
 	}
 	#directions ul.out > li ul{
 		margin-left: -45px;
