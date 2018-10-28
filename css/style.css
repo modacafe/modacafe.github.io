@@ -967,7 +967,6 @@ nav#footer p{
 #directions {
     position: relative;
     padding: 130px 0px;
-    margin-top: 100px;
     overflow: visible;
 	/* для разрешения 1536 ---  background-position: -700px center; */
 }
