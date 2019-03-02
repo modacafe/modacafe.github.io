@@ -1,6 +1,9 @@
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1357px) {
 	body {
 		font-size: 11px;
+	}
+	.navbar-header {
+		max-width: 425px;
 	}
 	.sec2 span, .icon-list, #icons2.conferences ul li, .icon2team1 span {
 		font-size: 16px;

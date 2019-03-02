@@ -248,7 +248,7 @@ width: 117px;
     font-size: 11px;
     font-weight: bold;
     margin: 0 20px;
-    width: 115px;
+    width: auto;
     text-transform: uppercase;
     color: #f26525;
 	font-family: "Roboto Condensed",sans-serif;
