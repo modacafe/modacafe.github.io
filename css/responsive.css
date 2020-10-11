@@ -2,6 +2,12 @@
 	body {
 		font-size: 11px;
 	}
+	.display-flex {
+		display: flex;
+	}
+	.nowrap {
+		flex-wrap: nowrap;
+	}
 	.navbar-header {
 		max-width: 425px;
 	}
