@@ -24,6 +24,9 @@ h1 {
 .nowrap {
 	flex-wrap: nowrap;
 }
+.space-between {
+	justify-content: space-between;
+}
 .heading {
 	height: 37vh;
 	position: relative;
