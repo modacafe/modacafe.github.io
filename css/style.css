@@ -15,7 +15,7 @@ body, html{
 	overflow-x: hidden;
 }
 
-h1 {
+h1 { 
 	text-transform: uppercase;
 }
 .display-flex {
@@ -26,7 +26,7 @@ h1 {
 }
 .space-between {
 	justify-content: space-between;
-}
+} 
 .heading {
 	height: 37vh;
 	position: relative;

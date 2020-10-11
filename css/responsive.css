@@ -175,6 +175,11 @@
 @media screen and (max-width: 480px) {
 	.navbar-header {
 		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.navbar-toggle {
+		flex: none;
 	}
 }
 @media screen and (max-width: 370px) {
