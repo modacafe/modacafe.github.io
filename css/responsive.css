@@ -172,6 +172,11 @@
 	}
 	.content h1 {padding: 37% 13px 10%}
 }
+@media screen and (max-width: 480px) {
+	.navbar-header {
+		width: 100%;
+	}
+}
 @media screen and (max-width: 370px) {
 	#directions .directions-bg-top {
 		bottom: -25px;
