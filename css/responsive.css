@@ -94,6 +94,9 @@
 		overflow: hidden;
 		text-align: center;
 	}
+	.navbar-default .navbar-toggle {
+		display: block;
+	}
 	.sec2 .text {
 		padding: 0;
 	}
@@ -173,6 +176,9 @@
 	.content h1 {padding: 37% 13px 10%}
 }
 @media screen and (max-width: 480px) {
+	.navbar {
+		flex-direction: column;
+	} 
 	.navbar-header {
 		width: 100%;
 		display: flex;
@@ -180,6 +186,13 @@
 	}
 	.navbar-toggle {
 		flex: none;
+	} 
+	.navbar-nav {
+		margin-top: 35px;
+		margin-bottom: 15px;
+	}
+	#tf-menu.navbar-default .navbar-nav > li > a {
+		text-align: left;
 	}
 }
 @media screen and (max-width: 370px) {

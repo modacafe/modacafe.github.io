@@ -5,11 +5,12 @@ function main() {
     var toggleon = true;
 
       $('.navbar-toggle').on('click', function() {
-        if (toggleon == true) {
-          $('#bs-navbar-collapse-3').stop(true);
+        if (toggleon == true) { 
+          $('#tf-menu').stop(true).toggleClass('shadow');
           $('.navbar-default').stop(true).toggleClass('on');
-        } else {
-          $('#bs-navbar-collapse-3').stop(true);
+          
+        } else {  
+          $('#tf-menu').stop(true).toggleClass('shadow');
           $('.navbar-default').stop(true);
         }
       });
