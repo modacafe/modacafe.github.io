@@ -7,8 +7,7 @@ function main() {
       $('.navbar-toggle').on('click', function() {
         if (toggleon == true) { 
           $('#tf-menu').stop(true).toggleClass('shadow');
-          $('.navbar-default').stop(true).toggleClass('on');
-          
+          $('.navbar-default').stop(true).toggleClass('on'); 
         } else {  
           $('#tf-menu').stop(true).toggleClass('shadow');
           $('.navbar-default').stop(true);
