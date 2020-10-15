@@ -33,11 +33,12 @@ h1 {
 
 .navbar {
 	flex-direction: row;
-} 
-.hamburger.collapsed .hamburger-inner, .hamburger.collapsed .hamburger-inner::after, .hamburger.collapsed .hamburger-inner::before,
-.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
+}
+
+.hamburger.collapsed .hamburger-inner, .hamburger.collapsed .hamburger-inner::after, .hamburger.collapsed .hamburger-inner::before, .hamburger-inner, .hamburger-inner::after, .hamburger-inner::before {
 	background-color: white
 }
+
 .navbar-default .navbar-toggle {
 	display: none;
 }
@@ -55,10 +56,20 @@ h1 {
 	opacity: 0;
 	transition: opacity 300ms;
 }
+
 #bs-navbar-collapse-3.navbar-collapse.in:after {
 	opacity: 1;
 	z-index: -1;
 	display: block;
+}
+
+.hamburger-box {
+	width: 30px;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+	width: 30px;
+	height: 3px;
 }
 
 .heading {
